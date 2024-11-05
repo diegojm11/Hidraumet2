@@ -1,0 +1,137 @@
+.leadImg {
+    
+    background-image: url('../../assets/img/video.jpg') ; 
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+   
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    
+    transition: all 1s;
+    
+    box-shadow: 0px 11px 5px -5px rgba(0, 0, 0, 0.352);
+}
+.solocolor{position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+.video{
+    top: 0;
+    left: 0;
+    width: 110%;
+    
+}
+.textoBannerContainer{
+    position: absolute;
+    display: flex ;
+    padding: 40px;
+    margin-top: 50px;
+    width: 70%;
+
+}
+
+
+.textoBanner p {
+    
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    text-align:center  ;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+     
+    
+}
+
+
+
+
+.leadImg h1{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    text-align:center  ;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    animation: move;
+    animation-duration: 3s;
+    
+
+}
+
+
+.enterBtn {
+    padding-right: 100px;
+    padding-bottom: 30px;
+    
+}
+.enterBtn button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    height: 60px;
+    width: 200px;
+    border: 2px solid;
+    border-color: rgba(47, 37, 37, 0.534);
+    border-radius: 10px;
+    color: #d8d8d8;
+    background-color: rgba(0, 0, 0, 0.418);
+    
+}
+
+.enterBtn button:hover{
+    color: white;
+    background-color: rgba(86, 29, 29, 0.784);
+}
+
+
+
+.achicarImg{
+    border-radius: 10px;
+    transform: scale(0.99) ;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(-700px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@media (max-width: 600px)  {
+    
+    .leadImg{
+        background-image: url('../../assets/img/fondoForm3.jpg');
+        background-position: center center;
+        display: flex ;
+        justify-content: center;
+        align-items: start;
+        padding-top: 50px;
+        
+    }
+    
+    .textoBanner img {
+        height: 70px;
+             
+        
+    }
+    
+    
+    .leadImg h1{
+
+        font-size: 40px;
+
+    
+    }
+    .textoBannerContainer{
+        display: flex ;
+        
+        padding: 90px;
+        
+    }
+}

@@ -1,0 +1,14 @@
+.app{
+  scroll-behavior: smooth  ; 
+  overscroll-behavior-y: contain;
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+--background-color: rgb(254, 255, 255);
+--titulos-color: rgb(107, 42, 42);
+}

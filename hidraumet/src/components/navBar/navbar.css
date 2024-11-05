@@ -1,0 +1,139 @@
+.barra nav{z-index: 100;
+    margin-top: 20px;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    border: 2px solid ;
+    background-color: rgba(255, 255, 255, 0.852);
+    border-color: rgba(11, 33, 70, 0.416);
+    display: flex;
+    align-items: center;
+    transition: all 1s;
+    
+
+}
+.barra nav div{
+    display: flex;
+    width: 100%;
+    
+    
+}
+.barra nav div div{
+    display: flex;
+    justify-content:start;
+    
+    
+    
+
+}
+
+.barra nav div div ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+
+}
+
+
+.barra nav div div ul li{
+    
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    margin-right: 60px;
+  
+}
+.barra a{
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; 
+    text-decoration: none;
+    align-self: center;
+    color: white;
+}
+.barra a:hover{
+    color: white;
+}
+
+.rinkelBrand a{
+    color: rgb(252, 252, 252);
+    
+}
+
+.barra img{
+    width:125px;
+    margin-right: 10px;
+    margin-left: 70px;
+    padding-bottom: 5px;
+}
+
+.barra nav div div ul li:hover{
+
+    animation: lihover 1s forwards;
+    
+}
+
+
+
+@keyframes lihover{
+   100%{ transform: scale(1.1); }
+}
+
+
+.barra nav div div ul li:not(:hover){
+        animation: nolihover 1s forwards;
+}
+
+@keyframes nolihover{
+   0%{ transform: scale(1.1); }
+
+}
+
+
+.navbar-scrolled{
+    
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.722);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo-scrolled {
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+   
+
+@media (max-width: 600px)  {
+    .barra{
+       
+        
+    }
+    .barra nav{width: 100%;
+        
+        overflow: hidden;
+    }
+    .barra nav div div{
+       
+    }
+    
+    .barra img{
+        margin-right: 10px;
+        padding-bottom: 5px;
+        filter: drop-shadow(1px 2px 1px rgb(15, 15, 15));
+    }
+    .barra nav div div ul{
+        display: none;
+        
+    }
+    .ulDerecha{
+        justify-content: start;
+        
+    }
+}

@@ -1,0 +1,131 @@
+.banner2{
+    height: 100vh;
+    display: flex;
+background-color: rgb(255, 255, 255)
+;
+   
+
+}
+#textoeimagen{
+    margin-top: 100px;
+    display:flex;
+    overflow:visible;
+   
+}
+
+
+
+#logoHidraumet {
+margin-left: 100px;
+}
+#logoHidraumet img{
+    width: 200px;
+    
+    
+}
+
+#textBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  
+    left:0;
+}
+
+
+.banner2 p{
+    padding: 30px;
+    font-size: 35px;
+
+    font-family: "Titillium Web", sans-serif;
+margin-left: 30px;
+
+font-weight: 400;
+color: rgba(0, 0, 0, 0.833);
+
+}
+
+
+@media (max-width: 600px)  {
+    .banner2{
+        height: 70vh;
+        align-items: start;  
+    }
+    #textoeimagen{
+        display: flex ;
+        flex-direction:column;
+        justify-content: start;
+        
+    }
+    #fotoInstitucionalRinkel {
+    
+        width: 100%;
+        overflow: hidden;
+        
+    
+    }
+    #fotoInstitucionalRinkel img{
+        max-width: 130%;
+        margin-left: -100px;
+        overflow: hidden;
+        
+        
+    }
+    
+    #textBox {
+    width: 100%;
+    height: 303px;
+    position: relative;
+    background-color: rgb(116, 38, 38);
+
+    }
+    
+            .banner2 p{
+                padding: 0px;
+                font-size: 20px;
+                
+                font-family: "Titillium Web", sans-serif;
+            margin: 30px;
+            
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.833);
+            
+            }
+        
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 4s;
+    
+
+}
+
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+
+.hidden2{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 3s;
+}
+
+
+.show2{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+

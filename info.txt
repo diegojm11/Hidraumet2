@@ -1,0 +1,45 @@
+
+paginas:
+-gruas espanna
+-patronelli
+-baco
+-chaparro
+-sica
+
+
+familia de productos -> hiperrealista
+
+detalle -> los planos de baco
+
+ 
+equipos de auxilio--->
+		(baco productos)
+	liviano 4 
+	pesado 2
+	Motos
+
+plataformas
+
+
+Servicios:
+reparacion -->
+
+mantenimiento -->
+
+		4 familias ->
+
+		logistica
+		volquetes
+		roll-off
+		residuos - compactadores 
+		servicios especiales
+
+
+Accesiorios-->
+	carros
+	guardabarros chapa
+	cajon herramientas
+	poleas
+	lingas 2 
+	medidas
+

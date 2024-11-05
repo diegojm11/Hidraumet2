@@ -1,0 +1,127 @@
+.ramasContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    height: 450px;
+    justify-content: center;
+}
+
+
+.cardtextcontainer{
+    background-color: rgba(22, 86, 176, 0.63);
+    height: 100%;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out, padding-top 0.5s  ease-in-out;
+    
+}
+
+.ramasContainer li:hover div{
+    
+    max-height: 100%;
+}
+
+.xcon{
+    margin-top: -50px;
+    transition: margin-top 0.5s ease-in-out
+}
+
+.ramasContainer li:hover .xcon{
+
+    margin-top: 140px;
+}
+
+
+
+
+.ramasContainer li{
+    border: 1px solid;
+    border-color: rgba(7, 25, 128, 0.342);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.ramasContainer li:hover{
+    animation: ramashover 1s forwards;   
+}
+
+@keyframes ramashover{
+    100%{ box-shadow: 0px 0px 2px 2px #0a4cb067;}
+ }
+
+
+
+ 
+.ramasContainer li a{
+    text-decoration: none;
+    font-size: 35px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    transition: transform 0.5s ease-in-out;
+
+}
+.ramasContainer li:hover a{
+    transform: translateY(-20px);
+  }
+
+  .ramasContainer li:not(:hover)  a{
+    transform: translateY(0px);
+  }
+
+
+.ramasContainer li  p{
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;   
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    
+}
+
+.ramasContainer li:hover p{
+   opacity: 1;
+    max-height: 100%;
+    
+  
+}
+
+.ramasContainer li:not(:hover)  p{
+    opacity: 0;  
+    max-height: 100%;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+ }
+
+
+
+
+
+.auxilio{  
+    background-image: url('../../assets/img/equipoauxiliook1.jpg');
+    background-size:cover;  
+    background-position:center;
+}
+
+
+
+
+.accesorios{
+    background-image: url('../../assets/img/accesorios.jpg');
+    background-size: cover;
+    background-position:center
+}
+
+.plataformas{
+    background-image: url('../../assets/img/plataformas1.jpg');
+    background-size: 130%;
+    background-position:center
+}
+.reparacion{
+    background-image: url('../../assets/img/reparacion.jpg');
+    background-size: cover;
+    background-position:center
+}

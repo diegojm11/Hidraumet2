@@ -1,0 +1,67 @@
+.background {
+    background-color: #ffffff;
+    position: absolute;
+
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    
+  }
+
+  .scrollText {
+    font-size: 1.5rem;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .parallax {
+  }
+  
+  .sticky {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #214288;
+    
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    color: aliceblue;
+  }
+  
+  .blue {
+    background-image: url('../../assets/img/reparacion3.jpg');
+    background-size: cover;
+    
+    background-position:center;
+  }
+  
+  .purple { background-image: url('../../assets/img/reparacion2.jpg');
+    background-size: cover;
+    
+    background-position:center;
+    
+  }
+  
+  @media (max-width: 750px) {
+    .card {
+      width: 40%;
+    }
+  
+    .parallax {
+      margin-right: 1.5rem;
+    }
+  
+    .sticky {
+      margin-left: 1.5rem;
+    }
+  }
+  
